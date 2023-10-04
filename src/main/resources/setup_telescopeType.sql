@@ -1,0 +1,11 @@
+drop table TelescopeType;
+
+CREATE TABLE TelescopeType (
+	id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+	name VarChar(50)
+);
+
+INSERT INTO TelescopeType (name) VALUES ('UNKNOWN');
+INSERT INTO TelescopeType (name) VALUES ('REFRACTOR');
+INSERT INTO TelescopeType (name) VALUES ('REFLECTOR');
+INSERT INTO TelescopeType (name) VALUES ('UNKNCATADIOPTRICOWN');
